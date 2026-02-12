@@ -115,7 +115,7 @@ function showFinalScreen() {
 
   const msg = "Buon San Valentino amore💘"
 
-  els.endText.textContent = `${msg}\n\nPunteggio: ${score}/${total}\n\nSorpresa: Hai vinto una giornata in SPA o ovunque tu voglia, tutto compreso`;
+  els.endText.textContent = `${msg}\n\nPunteggio: ${score}/${total}\n\nSorpresa: Hai vinto fuga in SPA con accompagnatore personale`;
   els.end.classList.remove("hidden");
 }
 
