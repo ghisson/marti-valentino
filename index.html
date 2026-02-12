@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Il nostro quiz 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>Quiz 💘</h1>
+      <p class="sub">Rispondi e scopri la sorpresa finale</p>
+    </header>
+
+    <section class="card">
+      <div class="progress">
+        <span id="progressText">1 / 5</span>
+        <div class="bar"><div id="barFill"></div></div>
+      </div>
+
+      <div class="photo">
+        <img id="photoImg" alt="Foto quiz" />
+      </div>
+
+      <h2 id="question" class="question"></h2>
+
+      <div id="answers" class="answers"></div>
+
+      <div class="feedbackRow">
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+        <div class="score">Punteggio: <b id="score">0</b></div>
+      </div>
+
+    <div class="actions">
+      <button id="prevBtn" class="btn ghost" type="button">⬅ Indietro</button>
+      <button id="nextBtn" class="btn" type="button" disabled>Avanti ➡</button>
+      <button id="continueBtn" class="btn hidden" type="button">Continua</button>
+    </div>
+    </section>
+
+    <section id="end" class="card end hidden">
+      <h2>Fine! 💞</h2>
+      <p id="endText" class="endText"></p>
+      <button id="restartBtn" class="btn" type="button">Rifallo</button>
+    </section>
+
+    <footer class="foot">
+      <small>Fatto con ❤️</small>
+    </footer>
+  </main>
+
+  <div id="loveOverlay" class="overlay hidden">
+  <div class="modal">
+    <h2>Marti, vuoi essere il mio San Valentino? 💘</h2>
+    <div class="modalActions">
+      <button id="loveYes" class="btn" type="button">Si</button>
+      <button id="loveNo" class="btn ghost runaway" type="button">No, non ti amo</button>
+    </div>
+    <p id="loveMsg" class="modalMsg"></p>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
